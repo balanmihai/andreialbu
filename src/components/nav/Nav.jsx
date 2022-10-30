@@ -15,7 +15,7 @@ const links = [
     label: 'branding & logos ->',
   },
   {
-    url: '/poster',
+    url: '/type',
     label: 'type ->',
   },
   {

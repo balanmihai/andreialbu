@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import styles from './Branding.module.css'
+import styles from './Photography.module.css'
 import tbv1 from "../../../public/images/tbv/TBV-01.png"
 import tbv2 from "../../../public/images/tbv/TBV-02.png"
 import tbv3 from "../../../public/images/tbv/TBV-03.png"
@@ -20,18 +20,10 @@ import gara4 from "../../../public/images/gara/4.png"
 import gara5 from "../../../public/images/gara/5.png"
 import gara6 from "../../../public/images/gara/6.png"
 import gara7 from "../../../public/images/gara/7.png"
-import logo1 from "../../../public/images/logo/1.png"
-import logo2 from "../../../public/images/logo/2.png"
-import logo3 from "../../../public/images/logo/3.png"
-import logo4 from "../../../public/images/logo/4.png"
-import logo5 from "../../../public/images/logo/5.png"
-import logo6 from "../../../public/images/logo/6.png"
-import logo7 from "../../../public/images/logo/7.png"
-import coverlogo from "../../../public/images/logo/cover.png"
 
 
 
-function Branding() {
+function Photography() {
 
   const title1 = "tbv."
   const p1 = `
@@ -117,7 +109,7 @@ This project has also been selected for DIPLOMA 2020.
           </div>
           <div className={styles.right}>
             <button className={styles.open} onClick={toggleModal3}>
-                    <img src={coverlogo.src} alt="" />
+                    <img src={tbv1.src} alt="" />
             </button>
           </div>
         </div>
@@ -172,31 +164,8 @@ This project has also been selected for DIPLOMA 2020.
       </div>
     </div>
     )}
-
-
-{modal3 && (
-    <div className={styles.modal}>
-      <div className={styles.overlay}></div>
-      <div className={styles.content}>
-      <div className={styles.wrapper}>
-        <img src={logo1.src} alt="" />
-        <img src={logo2.src} alt="" />
-        <img src={logo3.src} alt="" />
-        <img src={logo4.src} alt="" />
-        <img src={logo5.src} alt="" />
-        <img src={logo6.src} alt="" />
-        <img src={logo7.src} alt="" />
-      </div>
-
-        <button
-        className={styles.close}
-        onClick={toggleModal3}
-        >(close)</button>
-      </div>
-    </div>
-    )}
    </>
   );
 }
 
-export default Branding;
+export default Photography;
