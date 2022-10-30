@@ -1,0 +1,34 @@
+.container{
+  padding: 20px;
+  top: 0;
+  left: 0;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  width: 25vw;
+}
+
+.topText{
+  display: flex;
+  flex-direction: column;
+}
+
+.title{
+  padding-bottom: 20px;
+  font-size: 20px;
+}
+
+.about{
+  width: 21vw;
+}
+
+.contactWrapper{
+  padding-bottom: 40px;
+}
+
+.contactWrapper{
+  display: flex;
+  flex-direction: column;
+}

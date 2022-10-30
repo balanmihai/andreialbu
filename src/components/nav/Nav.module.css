@@ -1,0 +1,20 @@
+.link,
+.linkMobile {
+  font-size: 20px;
+  line-height: 24px;
+  color: var(--black);
+  cursor: pointer;
+}
+
+.container,
+.containerMobile {
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.linkActive {
+  width: fit-content;
+  background: var(--black);
+  color: var(--white);
+}

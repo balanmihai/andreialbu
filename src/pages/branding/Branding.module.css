@@ -1,0 +1,161 @@
+.container{
+  display: flex;
+  margin-left: 25vw;
+  height: 100vh;
+  overflow: auto;
+  flex-direction: column;
+}
+
+.row{
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.left{
+  width: 25vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.p{
+  padding-left: 20px;
+  width: 23vw;
+}
+
+.title{
+  padding: 20px 0 20px 20px;
+  font-size: 20px;
+  line-height: 25px;
+}
+
+.right{
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 50vw;
+}
+.right button{
+  padding: 0;
+  margin: 0;
+  border: none;
+  cursor: pointer;
+}
+
+.right img{
+  width: 80%;
+}
+
+/* MODAL */
+
+body.active-modal {
+  overflow-y: hidden;
+}
+
+.modal, .overlay {
+  z-index: 539000;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+}
+
+.overlay {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+.content {
+  z-index: 539001;
+  overflow-y: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.content img{
+  height: auto;
+  width: 40vw;
+  padding: 20px;
+}
+
+.contentTbv {
+  z-index: 539001;
+  overflow-y: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.contentTbv img{
+  height: auto;
+  width: 40vw;
+}
+
+.contentTbv img:first-child{
+  padding-top: 20px;
+}
+
+.contentTbv img:last-child{
+  padding-bottom: 20px;
+}
+
+
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wrapper img{
+  width: 60vw;
+}
+
+.flex{
+  display: flex;
+}
+
+.flex img{
+  width: calc(30vw - 20px);
+}
+
+
+.divLeft{
+  display: flex;
+  flex-direction: column;
+}
+
+.divRight{
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+}
+
+.close {
+  font-family: OverpassMono-Regular;
+  width: fit-content;
+  background: var(--black);
+  color: var(--white);
+  cursor: pointer;
+  font-size: 18px;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  position: fixed;
+  top: 2%;
+  right: 2%;
+}

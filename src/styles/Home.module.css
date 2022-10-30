@@ -1,0 +1,27 @@
+.container,
+.containerMobile {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+  
+.container {
+  font-size: 160px;
+  line-height: 130px;
+}
+
+.containerMobile {
+  font-size: 76px;
+  align-items: flex-start;
+  gap: 8px;
+  padding-left: 8px;
+  line-height: 76px;
+}
+
+
+.right{
+  min-height: 110vh;
+  margin-left: 50vw;
+  width: 50vw;
+  background-color: rgb(208, 208, 176);
+}
