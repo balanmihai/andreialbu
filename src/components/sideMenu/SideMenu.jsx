@@ -19,10 +19,10 @@ const SideMenu = () => (
       </div>
       <Nav/>
       <div className={styles.contactWrapper}>
-          <a href="mailto: andrei.albu1998@gmail.com" target="_blank">
+          <a href="mailto: andrei.albu1998@gmail.com" target="_blank" rel="noopener noreferrer">
             <span className={styles.mail}>{mail}</span>
           </a>
-          <a href="https://www.instagram.com/ne.caz/" target="_blank">
+          <a href="https://www.instagram.com/ne.caz/" target="_blank" rel="noopener noreferrer">
             <span className={styles.instagram}>{instagram}</span>
           </a>
       </div>
