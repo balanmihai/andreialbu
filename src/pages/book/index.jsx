@@ -65,7 +65,6 @@ function Dialog1(props) {
     >
     <div className={styles.modal}>
       <div className={styles.overlay}></div>
-    
       <div className={styles.content}>
       <button
         className={styles.close}

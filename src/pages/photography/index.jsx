@@ -175,7 +175,7 @@ function Photography() {
         <div className={styles.row}>
             <div className={styles.left}>
             <span className={styles.title}>{title2}</span>
-            <span className={styles.p}>{p1}</span>
+            <span className={styles.p}>{p2}</span>
           </div>
           <div className={styles.right}>
                 <button className={styles.open} onClick={handleClickOpen2}>

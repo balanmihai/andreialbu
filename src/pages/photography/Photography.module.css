@@ -173,5 +173,9 @@ body.active-modal {
     width: 90%
   }
 
+
+  .wrapper img{
+    width: 90%;
+  }
   
 }
