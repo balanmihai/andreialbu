@@ -1,81 +1,162 @@
 import React, { useState } from 'react';
 import styles from './Photography.module.css'
-import tbv1 from "../../../public/images/tbv/TBV-01.png"
-import tbv2 from "../../../public/images/tbv/TBV-02.png"
-import tbv3 from "../../../public/images/tbv/TBV-03.png"
-import tbv4 from "../../../public/images/tbv/TBV-04.png"
-import tbv5 from "../../../public/images/tbv/TBV-05.png"
-import tbv6 from "../../../public/images/tbv/TBV-06.png"
-import tbv7 from "../../../public/images/tbv/TBV-07.png"
-import tbv8 from "../../../public/images/tbv/TBV-08.png"
-import tbv9 from "../../../public/images/tbv/TBV-09.png"
-import tbv10 from "../../../public/images/tbv/TBV-10.png"
-import tbv11 from "../../../public/images/tbv/TBV-11.png"
-import tbv12 from "../../../public/images/tbv/TBV-12.png"
-import clip from "../../../public/images/tbv/Clip.gif"
-import gara1 from "../../../public/images/gara/1.png"
-import gara2 from "../../../public/images/gara/2.png"
-import gara3 from "../../../public/images/gara/3.png"
-import gara4 from "../../../public/images/gara/4.png"
-import gara5 from "../../../public/images/gara/5.png"
-import gara6 from "../../../public/images/gara/6.png"
-import gara7 from "../../../public/images/gara/7.png"
+import Dialog from '@mui/material/Dialog';
+import bw1 from "../../../public/images/bw/1.JPG"
+import bw2 from "../../../public/images/bw/2.JPG"
+import bw3 from "../../../public/images/bw/3.JPG"
+import bw4 from "../../../public/images/bw/4.jpg"
+import bw5 from "../../../public/images/bw/5.jpg"
+import bw6 from "../../../public/images/bw/6.jpg"
+import bw7 from "../../../public/images/bw/7.jpg"
+import bw8 from "../../../public/images/bw/8.jpg"
+import bw9 from "../../../public/images/bw/9.jpg"
+import bw10 from "../../../public/images/bw/10.jpg"
+import bw11 from "../../../public/images/bw/11.JPG"
+import bw12 from "../../../public/images/bw/12.JPG"
+import bw13 from "../../../public/images/bw/13.jpg"
+import bw14 from "../../../public/images/bw/14.png"
+import bw15 from "../../../public/images/bw/15.png"
+import bw16 from "../../../public/images/bw/16.png"
+import bw17 from "../../../public/images/bw/17.jpg"
+import bw18 from "../../../public/images/bw/18.JPG"
+import nye1 from "../../../public/images/nye/1.jpg"
+import nye2 from "../../../public/images/nye/2.jpg"
+import nye3 from "../../../public/images/nye/3.jpg"
+import nye4 from "../../../public/images/nye/4.jpg"
+import nye5 from "../../../public/images/nye/5.jpg"
+import nye6 from "../../../public/images/nye/6.jpg"
+
+
+const title1 = "black & white"
+const p1 = `
+Black and white film photography, realized using Ilford HP5 and XP2. The selection includes portraits of people I know or that I met briefly. Some of the pictures are taken using a medium format, 120mm camera (Mamiya RB67), some on my 35mm SLR, or my point & shoot whenever I had to think quick.
+`
+
+const title2 = `NYE party print`
+
+const p2 = `
+Film photography meets riso printing.
+`
+function Dialog1(props) {
+  const { onClose1, open1 } = props;
+
+  function handleClose1() {
+    onClose1();
+  }
+
+  return (
+    <>
+
+      <Dialog
+      onClose={handleClose1}
+      open={open1}
+      BackdropProps={{ style: { backdropFilter: "blur(5px)" } }}
+    >
+    <div className={styles.modal}>
+      <div className={styles.overlay}></div>
+    
+      <div className={styles.content}>
+      <button
+        className={styles.close}
+        onClick={handleClose1}
+        >(close)</button>
+      <div className={styles.wrapper}>
+        <img src={bw1.src} alt="" />
+        <img src={bw2.src} alt="" />
+        <img src={bw3.src} alt="" />
+        <img src={bw4.src} alt="" />
+        <img src={bw5.src} alt="" />
+        <img src={bw6.src} alt="" />
+        <img src={bw7.src} alt="" />
+        <img src={bw8.src} alt="" />
+        <img src={bw9.src} alt="" />
+        <img src={bw10.src} alt="" />
+        <img src={bw11.src} alt="" />
+        <img src={bw12.src} alt="" />
+        <img src={bw13.src} alt="" />
+        <img src={bw14.src} alt="" />
+        <img src={bw15.src} alt="" />
+        <img src={bw16.src} alt="" />
+        <img src={bw17.src} alt="" />
+        <img src={bw18.src} alt="" />
+      </div>
+      
+      </div>
+    </div>
+
+    </Dialog>
+    </>
+  );
+}
+
+
+
+
+function Dialog2(props) {
+  const { onClose2, open2 } = props;
+
+  function handleClose2() {
+    onClose2();
+  }
+
+  return (
+    <>
+
+      <Dialog
+      onClose={handleClose2}
+      open={open2}
+      BackdropProps={{ style: { backdropFilter: "blur(5px)" } }}
+    >
+      
+
+      <div className={styles.modal}>
+      <div className={styles.overlay}></div>
+    
+      <div className={styles.content}>
+      <button
+        className={styles.close}
+        onClick={handleClose2}
+        >(close)</button>
+      <div className={styles.wrapper}>
+        <img src={nye1.src} alt="" />
+        <img src={nye2.src} alt="" />
+        <img src={nye3.src} alt="" />
+        <img src={nye4.src} alt="" />
+        <img src={nye5.src} alt="" />
+        <img src={nye6.src} alt="" />
+      </div>
+      
+      </div>
+    </div>
+
+
+    </Dialog>
+    </>
+  );
+}
 
 
 
 function Photography() {
 
-  const title1 = "tbv."
-  const p1 = `
-  “Word for word” proposes a fusion between calendar and dictionary. The calendar provides a word for every day of the year, the goal being to learn something new everyday. To make sure that every word is a surprise, the selection is comprised of neologisms (new words) and archaisms (old words), but not exclusively.
-The project experiments with the learning process as well. Part of the 365 terms and their definitions are accompanied by typographic experiments. These are meant to illustrate, contributing to the assimilation and memorization of the words.
+  const [open1, setOpen1] = React.useState(false);
+  const [open2, setOpen2] = React.useState(false);
 
-This project has also been selected for DIPLOMA 2022.
-`
-
-const title2 = `North Railway Station wayfinding`
-
-const p2 = `
-Dicționar onomastic / Onomastic Dictionary addresses fragments of Mircea Horia Simionescu’s text through typography and film photography. M. H. Simionescu (the author of the text) presents various human typologies and surreal stories, using names as a pretext. The texts are pure fiction and they flirt with the absurd.
-The foundation of the project is the classic structure of the dictionary. But the layout takes a less conventional turn, so the “normal” pages are alternated with playful or contrasting elements. Therefore, you should not be surprised if you find pages full of text, very small photos or pages with a single paragraph. The design of the layout is meant to capture the essence, the atmosphere of the narrative, balancing the real with the imaginary, the crazy with the sane.
-
-This project has also been selected for DIPLOMA 2020.
-`
-
-const title3 = `Logofolio`
-
-const p3 = `
-Dicționar onomastic / Onomastic Dictionary addresses fragments of Mircea Horia Simionescu’s text through typography and film photography. M. H. Simionescu (the author of the text) presents various human typologies and surreal stories, using names as a pretext. The texts are pure fiction and they flirt with the absurd.
-The foundation of the project is the classic structure of the dictionary. But the layout takes a less conventional turn, so the “normal” pages are alternated with playful or contrasting elements. Therefore, you should not be surprised if you find pages full of text, very small photos or pages with a single paragraph. The design of the layout is meant to capture the essence, the atmosphere of the narrative, balancing the real with the imaginary, the crazy with the sane.
-
-This project has also been selected for DIPLOMA 2020.
-`
-
-
-  const [modal1, setModal1] = useState(false)
-  const [modal2, setModal2] = useState(false)
-  const [modal3, setModal3] = useState(false)
-
-  const toggleModal1 = () =>{
-    setModal1(!modal1)
-    if (typeof window != 'undefined' && window.document) {
-      document.body.style.overflow = 'hidden';
-  }
+  function handleClickOpen1() {
+    setOpen1(true);
   }
 
-  const toggleModal2 = () =>{
-    setModal2(!modal2)
-    if (typeof window != 'undefined' && window.document) {
-      document.body.style.overflow = 'hidden';
-  }
+  const handleClose1 = value => {
+    setOpen1(false);
+  };
+
+  function handleClickOpen2() {
+    setOpen2(true);
   }
 
-  const toggleModal3 = () =>{
-    setModal3(!modal3)
-    if (typeof window != 'undefined' && window.document) {
-      document.body.style.overflow = 'hidden';
-  }
-  }
+  const handleClose2 = value => {
+    setOpen2(false);
+  };
 
   return (
    <>
@@ -86,8 +167,8 @@ This project has also been selected for DIPLOMA 2020.
             <span className={styles.p}>{p1}</span>
           </div>
           <div className={styles.right}>
-                <button className={styles.open} onClick={toggleModal1}>
-                  <img src={tbv1.src} alt="" />
+                <button className={styles.open} onClick={handleClickOpen1}>
+                  <img src={bw1.src} alt="" />
                 </button>
           </div>
         </div>
@@ -97,73 +178,23 @@ This project has also been selected for DIPLOMA 2020.
             <span className={styles.p}>{p1}</span>
           </div>
           <div className={styles.right}>
-                <button className={styles.open} onClick={toggleModal2}>
-                  <img src={gara1.src} alt="" />
+                <button className={styles.open} onClick={handleClickOpen2}>
+                  <img src={nye1.src} alt="" />
                 </button>
           </div>
         </div>
-        <div className={styles.row}>
-            <div className={styles.left}>
-            <span className={styles.title}>{title3}</span>
-            <span className={styles.p}>{p2}</span>
-          </div>
-          <div className={styles.right}>
-            <button className={styles.open} onClick={toggleModal3}>
-                    <img src={tbv1.src} alt="" />
-            </button>
-          </div>
-        </div>
+
     </div>
 
-    {modal1 && (
-    <div className={styles.modal}>
-      <div className={styles.overlay}></div>
-      <div className={styles.contentTbv}>
-      <div className={styles.wrapper}>
-        <img src={tbv1.src} alt="" />
-        <img src={tbv2.src} alt="" />
-        <img src={tbv3.src} alt="" />
-        <img src={tbv4.src} alt="" />
-        <img src={tbv5.src} alt="" />
-        <img src={tbv6.src} alt="" />
-        <img src={tbv7.src} alt="" />
-        <img src={tbv8.src} alt="" />
-        <img src={tbv9.src} alt="" />
-        <img src={tbv10.src} alt="" />
-        <img src={tbv11.src} alt="" />
-        <img src={tbv12.src} alt="" />
-        <img src={clip.src} alt="" />
-      </div>
-        <button
-        className={styles.close}
-        onClick={toggleModal1}
-        >(close)</button>
-      </div>
-    </div>
-    )}
+    <Dialog1
+        open1={open1}
+        onClose1={handleClose1}
+      />
 
-
-{modal2 && (
-    <div className={styles.modal}>
-      <div className={styles.overlay}></div>
-      <div className={styles.content}>
-      <div className={styles.wrapper}>
-        <img src={gara1.src} alt="" />
-        <img src={gara2.src} alt="" />
-        <img src={gara3.src} alt="" />
-        <img src={gara4.src} alt="" />
-        <img src={gara5.src} alt="" />
-        <img src={gara6.src} alt="" />
-        <img src={gara7.src} alt="" />
-      </div>
-
-        <button
-        className={styles.close}
-        onClick={toggleModal2}
-        >(close)</button>
-      </div>
-    </div>
-    )}
+      <Dialog2
+        open2={open2}
+        onClose2={handleClose2}
+      />
    </>
   );
 }

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import styles from './Branding.module.css'
+import Dialog from '@mui/material/Dialog';
 import tbv1 from "../../../public/images/tbv/TBV-01.png"
 import tbv2 from "../../../public/images/tbv/TBV-02.png"
 import tbv3 from "../../../public/images/tbv/TBV-03.png"
@@ -27,16 +28,17 @@ import logo4 from "../../../public/images/logo/4.png"
 import logo5 from "../../../public/images/logo/5.png"
 import logo6 from "../../../public/images/logo/6.png"
 import logo7 from "../../../public/images/logo/7.png"
+import logo8 from "../../../public/images/logo/8.png"
 import coverlogo from "../../../public/images/logo/cover.png"
 
 
 
-function Branding() {
 
-  const title1 = "tbv."
-  const p1 = `
-  Tbv. or tineri bunavestire is a community for youth that promotes Christian values. It is a space for students and young adults to get to know each other and make friends and debate certain topics.
-  The community wanted a new visual identity that better encapsulates what the brand stands for. The logo is designed to look friendly and at the same time to inspire confidence. The color scheme focusing on bold contrasting colors reflects the youthful spirit. The pairing of black background and pale yellow elements creates the illusion of “light in the darkness”, which is exactly what the community strives to be. The visual identity is created mainly for the online, mostly being used for Instagram posts, stories and announcements.
+
+const title1 = "tbv."
+const p1 = `
+Tbv. or tineri bunavestire is a community for youth that promotes Christian values. It is a space for students and young adults to get to know each other and make friends and debate certain topics.
+The community wanted a new visual identity that better encapsulates what the brand stands for. The logo is designed to look friendly and at the same time to inspire confidence. The color scheme focusing on bold contrasting colors reflects the youthful spirit. The pairing of black background and pale yellow elements creates the illusion of “light in the darkness”, which is exactly what the community strives to be. The visual identity is created mainly for the online, mostly being used for Instagram posts, stories and announcements.
 `
 
 const title2 = `North Railway Station wayfinding`
@@ -52,70 +54,23 @@ A collection of marks, symbols and logos (both concept and in use). This project
 `
 
 
-  const [modal1, setModal1] = useState(false)
-  const [modal2, setModal2] = useState(false)
-  const [modal3, setModal3] = useState(false)
 
-  const toggleModal1 = () =>{
-    setModal1(!modal1)
-    if (typeof window != 'undefined' && window.document) {
-      document.body.style.overflow = 'hidden';
-  }
-  }
 
-  const toggleModal2 = () =>{
-    setModal2(!modal2)
-    if (typeof window != 'undefined' && window.document) {
-      document.body.style.overflow = 'hidden';
-  }
-  }
+function Dialog1(props) {
+  const { onClose1, open1 } = props;
 
-  const toggleModal3 = () =>{
-    setModal3(!modal3)
-    if (typeof window != 'undefined' && window.document) {
-      document.body.style.overflow = 'hidden';
-  }
+  function handleClose1() {
+    onClose1();
   }
 
   return (
-   <>
-    <div className={styles.container}>
-        <div className={styles.row}>
-            <div className={styles.left}>
-            <span className={styles.title}>{title1}</span>
-            <span className={styles.p}>{p1}</span>
-          </div>
-          <div className={styles.right}>
-                <button className={styles.open} onClick={toggleModal1}>
-                  <img src={tbv1.src} alt="" />
-                </button>
-          </div>
-        </div>
-        <div className={styles.row}>
-            <div className={styles.left}>
-            <span className={styles.title}>{title2}</span>
-            <span className={styles.p}>{p2}</span>
-          </div>
-          <div className={styles.right}>
-                <button className={styles.open} onClick={toggleModal2}>
-                  <img src={gara1.src} alt="" />
-                </button>
-          </div>
-        </div>
-        <div className={styles.row}>
-            <div className={styles.left}>
-            <span className={styles.title}>{title3}</span>
-            <span className={styles.p}>{p3}</span>
-          </div>
-          <div className={styles.right}>
-            <button className={styles.open} onClick={toggleModal3}>
-                    <img src={coverlogo.src} alt="" />
-            </button>
-          </div>
-        </div>
-    </div>
+    <>
 
-    {modal1 && (
+      <Dialog
+      onClose={handleClose1}
+      open={open1}
+      BackdropProps={{ style: { backdropFilter: "blur(5px)" } }}
+    >
     <div className={styles.modal}>
       <div className={styles.overlay}></div>
       <div className={styles.contentTbv}>
@@ -136,14 +91,34 @@ A collection of marks, symbols and logos (both concept and in use). This project
       </div>
         <button
         className={styles.close}
-        onClick={toggleModal1}
+        onClick={handleClose1}
         >(close)</button>
       </div>
     </div>
-    )}
+
+    </Dialog>
+    </>
+  );
+}
 
 
-{modal2 && (
+
+
+function Dialog2(props) {
+  const { onClose2, open2 } = props;
+
+  function handleClose2() {
+    onClose2();
+  }
+
+  return (
+    <>
+
+      <Dialog
+      onClose={handleClose2}
+      open={open2}
+      BackdropProps={{ style: { backdropFilter: "blur(5px)" } }}
+    >
     <div className={styles.modal}>
       <div className={styles.overlay}></div>
       <div className={styles.content}>
@@ -159,14 +134,31 @@ A collection of marks, symbols and logos (both concept and in use). This project
 
         <button
         className={styles.close}
-        onClick={toggleModal2}
+        onClick={handleClose2}
         >(close)</button>
       </div>
     </div>
-    )}
+
+    </Dialog>
+    </>
+  );
+}
 
 
-{modal3 && (
+function Dialog3(props) {
+  const { onClose3, open3 } = props;
+
+  function handleClose3() {
+    onClose3();
+  }
+
+  return (
+    <>
+      <Dialog
+      onClose={handleClose3}
+      open={open3}
+      BackdropProps={{ style: { backdropFilter: "blur(5px)" } }}
+    >
     <div className={styles.modal}>
       <div className={styles.overlay}></div>
       <div className={styles.content}>
@@ -178,15 +170,106 @@ A collection of marks, symbols and logos (both concept and in use). This project
         <img src={logo5.src} alt="" />
         <img src={logo6.src} alt="" />
         <img src={logo7.src} alt="" />
+        <img src={logo8.src} alt="" />
       </div>
 
         <button
         className={styles.close}
-        onClick={toggleModal3}
+        onClick={handleClose3}
         >(close)</button>
       </div>
     </div>
-    )}
+
+    </Dialog>
+    </>
+  );
+}
+
+
+function Branding() {
+
+
+
+  const [open1, setOpen1] = React.useState(false);
+  const [open2, setOpen2] = React.useState(false);
+  const [open3, setOpen3] = React.useState(false);
+
+  function handleClickOpen1() {
+    setOpen1(true);
+  }
+
+  const handleClose1 = value => {
+    setOpen1(false);
+  };
+
+  function handleClickOpen2() {
+    setOpen2(true);
+  }
+
+  const handleClose2 = value => {
+    setOpen2(false);
+  };
+
+  function handleClickOpen3() {
+    setOpen3(true);
+  }
+
+  const handleClose3 = value => {
+    setOpen3(false);
+  };
+
+  return (
+   <>
+    <div className={styles.container}>
+        <div className={styles.row}>
+            <div className={styles.left}>
+            <span className={styles.title}>{title1}</span>
+            <span className={styles.p}>{p1}</span>
+          </div>
+          <div className={styles.right}>
+                <button className={styles.open} onClick={handleClickOpen1}>
+                  <img src={tbv1.src} alt="" />
+                </button>
+          </div>
+        </div>
+        <div className={styles.row}>
+            <div className={styles.left}>
+            <span className={styles.title}>{title2}</span>
+            <span className={styles.p}>{p2}</span>
+          </div>
+          <div className={styles.right}>
+                <button className={styles.open} onClick={handleClickOpen2}>
+                  <img src={gara1.src} alt="" />
+                </button>
+          </div>
+        </div>
+        <div className={styles.row}>
+            <div className={styles.left}>
+            <span className={styles.title}>{title3}</span>
+            <span className={styles.p}>{p3}</span>
+          </div>
+          <div className={styles.right}>
+            <button className={styles.open} onClick={handleClickOpen3}>
+                    <img src={coverlogo.src} alt="" />
+            </button>
+          </div>
+        </div>
+    </div>
+
+    <Dialog1
+        open1={open1}
+        onClose1={handleClose1}
+      />
+
+      <Dialog2
+        open2={open2}
+        onClose2={handleClose2}
+      />
+
+      <Dialog3
+        open3={open3}
+        onClose3={handleClose3}
+      />
    </>
   );
 }

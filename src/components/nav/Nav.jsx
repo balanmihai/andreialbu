@@ -21,10 +21,6 @@ const links = [
   {
     url: '/photography',
     label: 'photography ->',
-  },
-  {
-    url: '/illustrations',
-    label: 'illustrations ->',
   }
 ];
 
