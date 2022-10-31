@@ -4,10 +4,17 @@
   justify-content: center;
   overflow: hidden;
 }
+
   
 .container {
-  font-size: 160px;
-  line-height: 130px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.necas{
+  width: 20vw;
 }
 
 .containerMobile {
@@ -24,4 +31,18 @@
   margin-left: 50vw;
   width: 50vw;
   background-color: rgb(208, 208, 176);
+}
+
+
+@media only screen and (max-width: 600px) {
+  .container {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  .necas{
+    width: 60vw;
+  }
+  
 }

@@ -40,9 +40,9 @@ This project has also been selected for DIPLOMA 2022.
     <div className={styles.container}>
         <div className={styles.row}>
             <div className={styles.left}>
-            <span className={styles.title}>{title1}</span>
-            <span className={styles.p}>{p1}</span>
-          </div>
+              <span className={styles.title}>{title1}</span>
+              <span className={styles.p}>{p1}</span>
+            </div>
           <div className={styles.right}>
                 <button className={styles.open} onClick={toggleModal1}>
                   <img src={l1.src} alt="" />

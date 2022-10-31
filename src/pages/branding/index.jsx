@@ -35,28 +35,20 @@ function Branding() {
 
   const title1 = "tbv."
   const p1 = `
-  “Word for word” proposes a fusion between calendar and dictionary. The calendar provides a word for every day of the year, the goal being to learn something new everyday. To make sure that every word is a surprise, the selection is comprised of neologisms (new words) and archaisms (old words), but not exclusively.
-The project experiments with the learning process as well. Part of the 365 terms and their definitions are accompanied by typographic experiments. These are meant to illustrate, contributing to the assimilation and memorization of the words.
-
-This project has also been selected for DIPLOMA 2022.
+  Tbv. or tineri bunavestire is a community for youth that promotes Christian values. It is a space for students and young adults to get to know each other and make friends and debate certain topics.
+  The community wanted a new visual identity that better encapsulates what the brand stands for. The logo is designed to look friendly and at the same time to inspire confidence. The color scheme focusing on bold contrasting colors reflects the youthful spirit. The pairing of black background and pale yellow elements creates the illusion of “light in the darkness”, which is exactly what the community strives to be. The visual identity is created mainly for the online, mostly being used for Instagram posts, stories and announcements.
 `
 
 const title2 = `North Railway Station wayfinding`
 
 const p2 = `
-Dicționar onomastic / Onomastic Dictionary addresses fragments of Mircea Horia Simionescu’s text through typography and film photography. M. H. Simionescu (the author of the text) presents various human typologies and surreal stories, using names as a pretext. The texts are pure fiction and they flirt with the absurd.
-The foundation of the project is the classic structure of the dictionary. But the layout takes a less conventional turn, so the “normal” pages are alternated with playful or contrasting elements. Therefore, you should not be surprised if you find pages full of text, very small photos or pages with a single paragraph. The design of the layout is meant to capture the essence, the atmosphere of the narrative, balancing the real with the imaginary, the crazy with the sane.
-
-This project has also been selected for DIPLOMA 2020.
+For this concept I reimagined the wayfinding system for the North Railway Station in Bucharest. The current system served as a starting point. The icons I designed use a rough geometry (reminding of mathematical sheets) to represent even the more organic shapes. This stylized version makes it easier for the user to “read” the signs, at the same time keeping a tidy and cohesive look all around. The typeface used, Space Grotesk, is a proportional sans-serif based on Space Mono family. Originally designed by Florian Karsten in 2018, Space Grotesk retains the monospace's idiosyncratic details while optimizing for improved readability even at non-display sizes.
 `
 
 const title3 = `Logofolio`
 
 const p3 = `
-Dicționar onomastic / Onomastic Dictionary addresses fragments of Mircea Horia Simionescu’s text through typography and film photography. M. H. Simionescu (the author of the text) presents various human typologies and surreal stories, using names as a pretext. The texts are pure fiction and they flirt with the absurd.
-The foundation of the project is the classic structure of the dictionary. But the layout takes a less conventional turn, so the “normal” pages are alternated with playful or contrasting elements. Therefore, you should not be surprised if you find pages full of text, very small photos or pages with a single paragraph. The design of the layout is meant to capture the essence, the atmosphere of the narrative, balancing the real with the imaginary, the crazy with the sane.
-
-This project has also been selected for DIPLOMA 2020.
+A collection of marks, symbols and logos (both concept and in use). This project includes work from my very early start, in 2018, up to my most recent projects.
 `
 
 
@@ -102,7 +94,7 @@ This project has also been selected for DIPLOMA 2020.
         <div className={styles.row}>
             <div className={styles.left}>
             <span className={styles.title}>{title2}</span>
-            <span className={styles.p}>{p1}</span>
+            <span className={styles.p}>{p2}</span>
           </div>
           <div className={styles.right}>
                 <button className={styles.open} onClick={toggleModal2}>
@@ -113,7 +105,7 @@ This project has also been selected for DIPLOMA 2020.
         <div className={styles.row}>
             <div className={styles.left}>
             <span className={styles.title}>{title3}</span>
-            <span className={styles.p}>{p2}</span>
+            <span className={styles.p}>{p3}</span>
           </div>
           <div className={styles.right}>
             <button className={styles.open} onClick={toggleModal3}>

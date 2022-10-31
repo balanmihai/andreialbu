@@ -1,6 +1,7 @@
 import React from 'react';
 import SideMenu from '../sideMenu/SideMenu';
 
+
 const Layout = ({ children }) => (
   <>
     <div>

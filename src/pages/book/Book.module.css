@@ -40,6 +40,7 @@
   margin: 0;
   border: none;
   cursor: pointer;
+  background: none;
 }
 
 .right img{
@@ -131,4 +132,40 @@ body.active-modal {
   position: fixed;
   top: 2%;
   right: 2%;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .container{
+    display: flex;
+    margin-left: 0;
+    height: 100vh;
+    overflow: initial;
+    flex-direction: column;
+  }
+
+  .row{
+    display: inline;
+    margin-bottom: 50px;
+  }
+
+  .left{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .right{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+  }
+
+  .p{
+    padding-left: 20px;
+    width: 100%;
+  }
 }
