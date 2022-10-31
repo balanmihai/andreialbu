@@ -200,6 +200,11 @@ body.active-modal {
 
   .p{
     padding-left: 20px;
-    width: 100%;
+    width: 90%;
   }
+
+  .right img{
+    width: 90%
+  }
+  
 }

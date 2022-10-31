@@ -38,11 +38,13 @@
   .container {
     height: auto;
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
 }
   .necas{
-    width: 60vw;
+    padding-left: 20px;
+    padding-top: 30px;
+    width: 40vw;
   }
   
 }
