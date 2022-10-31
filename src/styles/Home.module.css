@@ -14,7 +14,7 @@
 }
 
 .necas{
-  width: 20vw;
+  width: 30vw;
 }
 
 .containerMobile {
@@ -38,13 +38,13 @@
   .container {
     height: auto;
     display: flex;
-    justify-content: left;
+    justify-content: center;
     align-items: center;
 }
   .necas{
     padding-left: 20px;
     padding-top: 30px;
-    width: 40vw;
+    width: 60vw;
   }
   
 }

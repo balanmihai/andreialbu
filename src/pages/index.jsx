@@ -2,7 +2,7 @@ import dynamic from 'next/dynamic';
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 import useIsMobile from '../hooks/useIsMobile';
-import necas from '../../public/images/necas.png'
+import necas from '../../public/images/intrare.gif'
 
 export function Home() {
   const { isMobile } = useIsMobile();
