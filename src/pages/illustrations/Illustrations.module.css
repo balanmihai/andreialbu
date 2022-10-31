@@ -175,4 +175,8 @@ body.active-modal {
   .wrapper img{
     width: 90%;
   }
+
+  .flex img{
+    width: calc(45% - 20px);
+  }
 }
